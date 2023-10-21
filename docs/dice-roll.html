@@ -14759,9 +14759,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Discussion-of-Problems-1-2">Discussion of Problems 1-2<a class="anchor-link" href="#Discussion-of-Problems-1-2">&#182;</a></h3><p>A reasonable presumption would be that the expected outcome of these two scenarios would be equal by taking the expectation of a random variable represented by:</p>
 $$E(X) = n \cdot p(X)$$<p>The probability of rolling two sixes may be computed as the intersection of independent events:</p>
-$$\
+$$
 \frac{1}{6} \times \frac{1}{6} = \frac{1}{36}
-\$$<p>Rearranging for n in the previous formula leads us to an expected number of rolls equating to 36.</p>
+$$<p>Rearranging for n in the previous formula leads us to an expected number of rolls equating to 36.</p>
 <p>This is, as foreshadowed by the previous simulations, correct for the first problem and incorrect for the second. To solve the latter analytically, one may use recursion:</p>
 $$E[6,6] = 6 + \frac{1}{6} \cdot 1 + \frac{5}{6} (E[6,6] + 1)$$<p>In other words, having landed a six, what is the probability of landing a six on my subsequent roll. I have a sixth chance of getting it on the next roll, otherwise I have to restart having 'spent' a roll. Solving for the above formula leads to an expected number of rolls equating to 42. The intuition for the difference in results may be explained by the following scenario: imagine you roll [2,6], followed by [6,1]. In the first problem case, this would not be counted as successful since the stopping time is based on outcomes produced by two die on a single roll. In the second problem however, this would be recorded as [2,6,6,1] which would certainly result as a met outcome.</p>
 
