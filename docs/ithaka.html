@@ -15396,55 +15396,6 @@ The Calmar Ratio of the benchmark is 2.0
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tickers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">assetType</span> <span class="ow">in</span> <span class="n">portfolioInput</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">assetType</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-            <span class="n">tickers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-            <span class="n">tickers</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-            
-<span class="n">uniqueTickers</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">tickers</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">uniqueTickers</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;^VIX&#39;, &#39;HYG&#39;, &#39;TLT&#39;, &#39;TBF&#39;, &#39;IYK&#39;, &#39;BTC-USD&#39;, &#39;GSG&#39;, &#39;VXX&#39;, &#39;GLD&#39;, &#39;BIL&#39;, &#39;LQD&#39;, &#39;UUP&#39;, &#39;QQQ&#39;, &#39;SPY&#39;}
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
