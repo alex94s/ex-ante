@@ -13,11 +13,10 @@
             padding: 0;
         }
         header {
-            display: flex; /* Flex layout for header */
-            align-items: center; /* Center content vertically */
             padding: 30px 0;
             background-color: #fff;
             border-bottom: 1px solid #eaeaea;
+            text-align: left; /* Align text to the left */
         }
         header h1 {
             font-size: 2.5em;
@@ -25,13 +24,10 @@
             margin: 0;
             text-transform: lowercase;
             color: #111;
-            flex: 1; /* Allow title to take available space */
-        }
-        header div {
-            text-align: left; /* Align text to the left */
+            margin-left: 20px; /* Adjust margin to align with content */
         }
         header p {
-            margin: 3px 0 0;
+            margin: 3px 20px 0; /* Adjusted for consistent alignment */
             font-size: 1.2em;
             color: #555;
         }
@@ -40,6 +36,7 @@
             font-style: normal;
             font-size: 1.1em;
             color: #666;
+            margin-left: 20px; /* Align with the title */
         }
         main {
             max-width: 800px;
@@ -88,11 +85,9 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1>ex-ante</h1>
-            <p><em>(ɛks ˈæntɪ) adjective, adverb.</em></p>
-            <p class="definition">based on what is expected to happen.</p>
-        </div>
+        <h1>ex-ante</h1>
+        <p><em>(ɛks ˈæntɪ) adjective, adverb.</em></p>
+        <p class="definition">based on what is expected to happen.</p>
     </header>
 
     <main>
