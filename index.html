@@ -5,110 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex-ante</title>
     <style>
+        /* General styling */
         body {
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            color: #333;
-            background-color: #f7f7f7;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        header {
+
+        /* Test Banner */
+        .banner {
+            background-image: url('banner.jpeg'); /* Make sure this is the correct file path */
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Reduced height to test */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        /* Overlay for text readability */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+        }
+
+        /* Header text */
+        .header-text {
+            z-index: 1;
+            text-align: left;
+            padding: 0 10%;
+        }
+
+        /* Header formatting */
+        .header-text h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header-text p {
+            font-size: 1.2rem;
+        }
+
+        /* Projects section */
+        .project-description {
             text-align: center;
-            padding: 30px 0;
-            background-color: #fff;
-            border-bottom: 1px solid #eaeaea;
+            padding: 20px 10%;
         }
-        header h1 {
-            font-size: 2.5em;
-            font-weight: 600;
-            margin: 0;
-            text-transform: lowercase;
-            color: #111;
+
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
         }
-        header p {
-            margin: 3px 0 0;
-            font-size: 1.2em;
-            color: #555;
-        }
-        header p.definition {
-            margin-top: 2px;
-            font-style: normal;
-            font-size: 1.1em;
-            color: #666;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px; /* Reduced padding */
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            border-radius: 10px;
-            display: grid; /* Using grid layout for two columns */
-            grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-            gap: 10px; /* Space between items */
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #555;
-            grid-column: span 2; /* Make this paragraph span both columns */
-        }
-        ul {
+
+        .projects ul {
             list-style-type: none;
-            padding: 0;
-            margin: 10px 0; /* Reduced margin */
+            width: 45%;
         }
-        ul li {
-            margin: 10px 0;
-            padding: 12px 15px;
-            background-color: #fafafa;
-            border: 1px solid #eaeaea;
-            border-radius: 6px;
-            transition: all 0.3s ease;
+
+        .projects li {
+            margin-bottom: 10px;
         }
-        ul li:hover {
-            background-color: #f0f0f0;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-        ul li a {
+
+        .projects a {
             text-decoration: none;
-            color: #0073e6;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            color: #333;
         }
-        ul li a:hover {
-            color: #005bb5;
+
+        .projects a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>ex-ante</h1>
-        <p><em>(ɛks ˈæntɪ) adjective, adverb.</em></p>
-        <p class="definition">based on what is expected to happen.</p>
-    </header>
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="overlay"></div>
+        <div class="header-text">
+            <h1>ex-ante</h1>
+            <p>(ɛks ˈæntɪ) adjective, adverb</p>
+            <p>based on what is expected to happen</p>
+        </div>
+    </div>
 
-    <main>
+    <!-- Project Description -->
+    <div class="project-description">
         <p>This is a collection of projects I am currently working on. The topics are open-ended, but a common theme is the study of probability and inference, which are areas I am keen to explore.</p>
+    </div>
 
-        <div>
-            <ul>
-                <li><a href="dice-roll.html">Games of Chance</a></li>
-                <li><a href="deadly-aquarium.html">Deadly Aquarium</a></li>
-                <li><a href="rotten-tomatoes.html">Cinematic Clusters</a></li>
-                <li><a href="alien-planet.html">Alien Planet</a></li>
-                <li><a href="reality.html">Reality is (Probably) Illusionary</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="leveraged.html">Pull the Lever, Kronk!</a></li>
-                <li><a href="bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
-                <li><a href="reversion.html">Ebb and Flow</a></li>
-                <li><a href="ergodicity.html">Behind the Curtain</a></li>
-                <li><a href="normal.html">The Trouble with Normal</a></li>
-            </ul>
-        </div>
-    </main>
+    <!-- Projects Section -->
+    <div class="projects">
+        <ul>
+            <li><a href="dice-roll.html">Games of Chance</a></li>
+            <li><a href="deadly-aquarium.html">Deadly Aquarium</a></li>
+            <li><a href="rotten-tomatoes.html">Cinematic Clusters</a></li>
+            <li><a href="alien-planet.html">Alien Planet</a></li>
+            <li><a href="reality.html">Reality is (Probably) Illusionary</a></li>
+        </ul>
+        <ul>
+            <li><a href="leveraged.html">Pull the Lever, Kronk!</a></li>
+            <li><a href="bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
+            <li><a href="reversion.html">Ebb and Flow</a></li>
+            <li><a href="ergodicity.html">Behind the Curtain</a></li>
+            <li><a href="normal.html">The Trouble with Normal</a></li>
+        </ul>
+    </div>
 </body>
 </html>
