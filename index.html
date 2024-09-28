@@ -14,35 +14,41 @@
         }
         header {
             text-align: center;
-            padding: 30px 0; /* Further reduced padding */
+            padding: 30px 0;
             background-color: #fff;
             border-bottom: 1px solid #eaeaea;
         }
         header h1 {
             font-size: 2.5em;
-            font-weight: 600; /* Bold weight for "ex-ante" */
+            font-weight: 600;
             margin: 0;
             text-transform: lowercase;
             color: #111;
         }
         header p {
-            margin: 3px 0 0; /* Further reduced margin */
+            margin: 3px 0 0;
             font-size: 1.2em;
             color: #555;
         }
         header p.definition {
-            margin-top: 2px; /* Reduced margin */
+            margin-top: 2px;
             font-style: normal;
             font-size: 1.1em;
             color: #666;
         }
         main {
             max-width: 800px;
-            margin: 20px auto; /* Reduced margin above main */
-            padding: 40px;
+            margin: 20px auto;
+            padding: 20px; /* Reduced padding */
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping for columns */
+        }
+        .project-list {
+            flex: 1 1 50%; /* Each column takes up half the width */
+            padding: 10px; /* Padding between columns */
         }
         p {
             font-size: 1.1em;
@@ -52,7 +58,7 @@
         ul {
             list-style-type: none;
             padding: 0;
-            margin-top: 20px; /* Reduced margin */
+            margin-top: 10px; /* Reduced margin */
         }
         ul li {
             margin: 10px 0;
@@ -85,20 +91,26 @@
     </header>
 
     <main>
-        <p>This is a collection of projects I am currently working on. The topics are open-ended, but a common theme is the study of probability and inference, which are areas I am keen to explore.</p>
+        <p>This is a collection of projects I am currently working on. The topics are open-ended, but a common theme is the study of probability and inference, which I am keen to explore.</p>
 
-        <ul>
-            <li><a href="dice-roll.html">Games of Chance</a></li>
-            <li><a href="deadly-aquarium.html">Deadly Aquarium</a></li>
-            <li><a href="rotten-tomatoes.html">Cinematic Clusters</a></li>
-            <li><a href="alien-planet.html">Alien Planet</a></li>
-            <li><a href="reality.html">Reality is (Probably) Illusionary</a></li>
-            <li><a href="leveraged.html">Pull the Lever, Kronk!</a></li>
-            <li><a href="bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
-            <li><a href="reversion.html">Ebb and Flow</a></li>
-            <li><a href="ergodicity.html">Behind the Curtain</a></li>
-            <li><a href="normal.html">The Trouble with Normal</a></li>
-        </ul>
+        <div class="project-list">
+            <ul>
+                <li><a href="dice-roll.html">Games of Chance</a></li>
+                <li><a href="deadly-aquarium.html">Deadly Aquarium</a></li>
+                <li><a href="rotten-tomatoes.html">Cinematic Clusters</a></li>
+                <li><a href="alien-planet.html">Alien Planet</a></li>
+                <li><a href="reality.html">Reality is (Probably) Illusionary</a></li>
+            </ul>
+        </div>
+        <div class="project-list">
+            <ul>
+                <li><a href="leveraged.html">Pull the Lever, Kronk!</a></li>
+                <li><a href="bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
+                <li><a href="reversion.html">Ebb and Flow</a></li>
+                <li><a href="ergodicity.html">Behind the Curtain</a></li>
+                <li><a href="normal.html">The Trouble with Normal</a></li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>
