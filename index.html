@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex-ante</title>
     <style>
-        /* General styling */
+        /* General page styling */
         body {
             font-family: 'Georgia', serif;
             margin: 0;
@@ -13,73 +13,82 @@
             background-color: #f4f4f4;
         }
 
-        /* Test Banner */
+        /* Banner styling */
         .banner {
-            background-image: url('banner.jpeg'); /* Make sure this is the correct file path */
+            background-image: url('banner.jpeg'); /* Path to your banner image */
             background-size: cover;
             background-position: center;
-            height: 300px; /* Reduced height to test */
+            height: 400px;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
             color: white;
         }
 
-        /* Overlay for text readability */
+        /* Dark overlay to improve text readability */
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
         }
 
-        /* Header text */
+        /* Header text styling */
         .header-text {
+            position: relative;
             z-index: 1;
-            text-align: left;
+            text-align: left; /* Keeps text left-aligned */
             padding: 0 10%;
+            color: white;
         }
 
-        /* Header formatting */
         .header-text h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             margin: 0;
         }
 
         .header-text p {
             font-size: 1.2rem;
+            margin-top: 5px;
         }
 
-        /* Projects section */
+        /* Project description */
         .project-description {
             text-align: center;
             padding: 20px 10%;
+            font-size: 1.2rem;
+            line-height: 1.5;
         }
 
+        /* Project section */
         .projects {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             padding: 0 10%;
+            margin-top: 20px;
         }
 
         .projects ul {
-            list-style-type: none;
-            width: 45%;
+            list-style: none;
+            padding: 0;
+            width: 45%; /* Two columns with space between them */
         }
 
         .projects li {
             margin-bottom: 10px;
         }
 
-        .projects a {
+        .projects li a {
             text-decoration: none;
+            font-size: 1.2rem;
             color: #333;
         }
 
-        .projects a:hover {
+        .projects li a:hover {
             text-decoration: underline;
         }
     </style>
@@ -100,7 +109,7 @@
         <p>This is a collection of projects I am currently working on. The topics are open-ended, but a common theme is the study of probability and inference, which are areas I am keen to explore.</p>
     </div>
 
-    <!-- Projects Section -->
+    <!-- Project Links in Two Columns -->
     <div class="projects">
         <ul>
             <li><a href="dice-roll.html">Games of Chance</a></li>
