@@ -12,9 +12,10 @@
             margin: 0;
             padding: 0;
         }
+
         /* Banner section */
         .banner {
-            background-image: url('banner.jpeg'); /* Replace with your image URL */
+            background-image: url('assets/images/banner.jpeg'); /* Fixed path */
             background-size: cover;
             background-position: center;
             height: 300px;
@@ -22,14 +23,6 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .banner h1 {
-            font-size: 3em;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px 40px;
-            border-radius: 8px;
-            text-transform: lowercase;
         }
 
         /* Header styles */
@@ -93,47 +86,46 @@
         }
         .projects ul li a {
             text-decoration: none;
-            color: #1a3d7f; /* Deep blue, sophisticated color */
+            color: #1a3d7f;
             font-weight: 600;
             transition: color 0.3s ease;
         }
         .projects ul li a:hover {
-            color: #b48a61; /* Muted gold for a Renaissance touch */
+            color: #b48a61;
         }
     </style>
 </head>
 <body>
 
-    <!-- Banner with image -->
-    <div class="banner">
-    </div>
+    <!-- Banner -->
+    <div class="banner"></div>
 
-    <!-- Header section -->
+    <!-- Header -->
     <header>
         <h1>ex-ante</h1>
         <p><em>(ɛks ˈæntɪ) adjective, adverb.</em></p>
         <p class="definition">based on what is expected to happen.</p>
     </header>
 
-    <!-- Main content -->
+    <!-- Main Content -->
     <main>
         <p>This is an open space where I explore certain thoughts on probability, possibility, and truth.</p>
 
-        <!-- Projects section in two columns -->
+        <!-- Projects -->
         <div class="projects">
             <ul>
-                <li><a href="dice-roll.html">Games of Chance</a></li>
-                <li><a href="deadly-aquarium.html">Deadly Aquarium</a></li>
-                <li><a href="rotten-tomatoes.html">Cinematic Clusters</a></li>
-                <li><a href="alien-planet.html">Alien Planet</a></li>
-                <li><a href="reality.html">Reality is (Probably) Illusionary</a></li>
+                <li><a href="pages/dice-roll.html">Games of Chance</a></li>
+                <li><a href="pages/deadly-aquarium.html">Deadly Aquarium</a></li>
+                <li><a href="pages/rotten-tomatoes.html">Cinematic Clusters</a></li>
+                <li><a href="pages/alien-planet.html">Alien Planet</a></li>
+                <li><a href="pages/reality.html">Reality is (Probably) Illusionary</a></li>
             </ul>
             <ul>
-                <li><a href="leveraged.html">Pull the Lever, Kronk!</a></li>
-                <li><a href="bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
-                <li><a href="reversion.html">Ebb and Flow</a></li>
-                <li><a href="ergodicity.html">Behind the Curtain</a></li>
-                <li><a href="normal.html">The Trouble with Normal</a></li>
+                <li><a href="pages/leveraged.html">Pull the Lever, Kronk!</a></li>
+                <li><a href="pages/bubbles.html">The Opposite of Crazy (Is Crazy)</a></li>
+                <li><a href="pages/reversion.html">Ebb and Flow</a></li>
+                <li><a href="pages/ergodicity.html">Behind the Curtain</a></li>
+                <li><a href="pages/normal.html">The Trouble with Normal</a></li>
             </ul>
         </div>
     </main>
