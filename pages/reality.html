@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14654,8 +14655,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Set the number of time steps and the number of life pathways</span>
 <span class="n">num_time_steps</span> <span class="o">=</span> <span class="mi">1000</span>
@@ -14740,10 +14741,10 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="k">def</span> <span class="nf">simulate_coin_flips</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">simulate_coin_flips</span><span class="p">():</span>
     <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
     
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">):</span>
@@ -14827,7 +14828,7 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Monte Carlo simulations are once again run but this time on a two-dimensional grid - each trajectory represents a human life within its corresponding geographical coordinates. Some paths will randomly intersect and provide  interactions which may result in large, irreversible and unpredictable outcomes - just imagine if you had not met that one special person who you decided to spend the majority of your waking hours with, or that one particular figure that inspired you to pursue a particular line of work. In my case, I can easily admit that these were oftentimes chance encounters and could not have been predicted beforehand - in fact, had I tied my shoelaces a few seconds earlier during certain key moments, I certainly would not be here writing this particular paragraph.</p>
-<p>Apart from the more obvious ways, interactions with others may also result in cementing certain aspects of an individual's identity through feedback mechanisms of varying accuracy depending on the individual's compatibility with his/her environment. Success may be highly dependent on being in the right place at the right time, but also around the right people who can activate an individual's potential and self-worth. Once again though, this is highly contingent on favourable random pathways. It behooves us to question the notion of an overarching fixed reality when its very foundation is supported by such fragile limbs.</p>
+<p>Apart from the more obvious ways, interactions with others may also result in cementing certain aspects of an individual's identity through feedback mechanisms of varying accuracy depending on the individual's compatibility with his/her environment. Success may be highly dependent on being in the right place at the right time, but also around the right people who can activate an individual's potential and self-worth. Once again though, this is highly contingent on favourable random pathways. It behoves us to question the notion of an overarching fixed reality when its very foundation is supported by such fragile limbs.</p>
 
 </div>
 </div>
@@ -14840,8 +14841,8 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Set the number of steps and the number of simulations</span>
 <span class="n">num_steps</span> <span class="o">=</span> <span class="mi">1000</span>
